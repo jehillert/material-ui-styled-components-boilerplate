@@ -1,45 +1,22 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import MomentUtils from '@date-io/moment';
 import PropTypes from 'prop-types';
-import { defaultTheme, GlobalStyle } from 'theme';
-import { MuiPickersUtilsProvider } from '@material-ui/pickers';
-import { serverConsoleUrl } from 'config';
+import { defaultTheme } from './default-theme';
+import { GlobalStyle } from './global-style';
 import { StylesProvider } from '@material-ui/styles';
 import { ThemeProvider } from 'styled-components';
-import { isDesktop } from 'utilities';
-import serverConsole from './AppConsole';
 
-class AppWrapper extends React.Component {
-  componentDidMount() {
-    if (isDesktop && serverConsole.isEnabled) {
-      serverConsole.create(
-        serverConsoleUrl,
-        'TimeLockrServerDemoPopupWindow',
-        800,
-        400,
-      );
-    }
-  }
-
-  render() {
-    const { children } = this.props;
-
-    return (
-      <>
-        <CssBaseline />
-        <ThemeProvider theme={defaultTheme}>
-          <StylesProvider injectFirst>
-            <GlobalStyle />
-            <MuiPickersUtilsProvider utils={MomentUtils}>
-              {children}
-            </MuiPickersUtilsProvider>
-          </StylesProvider>
-        </ThemeProvider>
-      </>
-    );
-  }
-}
+const AppWrapper = ({ children }) => (
+  <>
+    <cssbaseline/>
+    <themeprovider theme="{defaultTheme}">
+      <stylesprovider injectfirst="">
+        <globalstyle/>
+        {children}
+      </stylesprovider>
+    </themeprovider>
+  < / >
+);
 
 AppWrapper.defaultProps = {
   children: null,

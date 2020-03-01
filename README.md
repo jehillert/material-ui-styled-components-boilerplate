@@ -1,4 +1,4 @@
-##PLEASE NOTE
+## PLEASE NOTE
   This boilerplate is a work in progress.  I am taking an old project and chopping it down to get the bare minimum required to get a [MUI+Styled Components] project off the ground. It probably does not build yet, and if it does,the package file probably has stuff you do not need to add to your project.  In the meantime, the information below should still be helpful.
 
 ## ABOUT THIS REPO
