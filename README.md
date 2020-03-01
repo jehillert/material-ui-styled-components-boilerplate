@@ -5,7 +5,15 @@
 
 The boilerplate contained in this repo is intended to provide the code and dependencies necessary to build a ReactJS app from Material UI components while leaving customization and theming to the popular Styled Components CSS-in-JSS styling library. The developer should be able to immediately start styling imported MUI compoents using the Styled Component API with minimal conflicts.
 
-For those who already have Styled Components working in their Material UI project but are having troubles overriding MUI's default styles, I have pasted the code you are most likely looking for below.   ,
+More specifically, this repo aims to provide dependcies and code for the following:
+- Minimum Material UI dependencies for incorporating MUI components
+- Styled components with code for overriding default MUI styles
+- Styled components theming
+- Styled components global styles
+- Styled components linting
+- Babel and webpack configurations for the above
+
+For those who already have Styled Components working in their Material UI project but are having troubles overriding MUI's default styles, I have pasted the code you are most likely looking for below.
 
 Supporting documentation can be found on the Material UI website <a href="https://material-ui.com/guides/interoperability/#styled-components">here</a>, <a href="https://material-ui.com/guides/interoperability/#controlling-priority-%EF%B8%8F-3">here</a> and <a href="https://material-ui.com/styles/advanced/#injectfirst">here</a>.<code>
 
