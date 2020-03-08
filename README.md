@@ -13,7 +13,7 @@ Supporting documentation can be found on the Material UI website <a href="https:
 * The concatenation in this readme differs from the files in that there is no app.jsx, app-wrapper.jsx, or index.js files.  There are
   also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)
 ___
-###  PART I: Key styled-components code integrations.
+### PART I: Key styled-components code integrations
 ```javascript
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -96,7 +96,7 @@ AppWrapper.propTypes = {
 export default AppWrapper;
 ```
 
-### Create a theme file.
+### Create a theme file
 ```javascript
 // path/to/theme.js
 const m = (factor = 1) => {
@@ -197,7 +197,7 @@ export const RenderIfDesktop = styled.div`
   }
 `;
 ```
-### Provide global styles.
+### Provide global styles
 ```javascript
 // path/to/global-style.jsx
 // This file can reference the theme
@@ -254,7 +254,7 @@ const GlobalStyle = createGlobalStyle`
 
 export default GlobalStyle;
 ```
-### EXAMPLE 1A --- Create reusable styled components based on theme.
+### XAMPLE 1A --- Create reusable styled components based on them
 ```javascript
 // path/to/styled-dialog-parts
 import styled from 'styled-components';
@@ -321,7 +321,7 @@ export {
   StyledMuiDialogActions,
 };
 ```
-### EXAMPLE 1B --- A component using styled-component exports
+### XAMPLE 1B --- A component using styled-component export
 ```javascript
 // path/to/form-dialog.jsx
 import React from 'react';
@@ -401,7 +401,7 @@ FormDialog.defaultProps = {...};
 FormDialog.propTypes = {...};
 export default FormDialog;
 ```
-### EXAMPLE 2A --- Using media query functions for responsive design
+### XAMPLE 2A --- Using media query functions for responsive desig
 ```javascript
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -465,7 +465,7 @@ S.ResponsiveLeftSidePanel.propTypes = {
 
 export default ResponsiveLeftSidePanel;
 ```
-### EXAMPLE 2B --- Use media query functions outside of styled components
+### XAMPLE 2B --- Use media query functions outside of styled component
 ```javascript
 import React from 'react';
 import PropTypes from 'prop-types';
