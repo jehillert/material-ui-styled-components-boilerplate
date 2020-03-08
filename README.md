@@ -12,7 +12,7 @@ PLEASE NOTE:
 * The concatenation in this readme differs from the files in that there is no app.jsx, app-wrapper.jsx, or index.js files.  There are
   also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)
 
-###PART I - Key styled-components code integrations.
+###  PART I - Key styled-components code integrations.
 ```
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -60,8 +60,8 @@ export default defaultTheme;
 
 
 
-###PART II - File concat illustrating project setup & organization.
-####Set up application to provide theme, global styles, and style overrides.
+### PART II - File concat illustrating project setup & organization.
+#### Set up application to provide theme, global styles, and style overrides.
 ```
 // path/to/AppWrapper.jsx
 import CssBaseline from '@material-ui/core/CssBaseline';
