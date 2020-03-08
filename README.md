@@ -12,6 +12,7 @@ Supporting documentation can be found on the Material UI website <a href="https:
 * The author had about 18 months coding experience at the time of writing, so the information below may not reflect best practices.
 * The concatenation in this readme differs from the files in that there is no app.jsx, app-wrapper.jsx, or index.js files.  There are
   also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)
+___
 ###  PART I - Key styled-components code integrations.
 ```javascript
 import React from 'react';
@@ -45,7 +46,7 @@ AppWrapper.propTypes = {
 export default AppWrapper;
 ```
 
-..GlobalStyle and defaultTheme are defined in other files. For example:
+GlobalStyle and defaultTheme are defined in other files. For example:
 
 ```javascript
 // global-style.jsx
@@ -54,7 +55,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`...`;
 export default GlobalStyle;
 ```
-..and
+and
 ```javascript
 // theme.js
 
@@ -63,8 +64,8 @@ export default defaultTheme;
 ```
 ### PART II - File concat illustrating project setup & organization.
 ..Set up application to provide theme, global styles, and style overrides.
-.._path/to/app-wrapper.jsx_
 ```javascript
+// path/to/app-wrapper.jsx
 import CssBaseline from '@material-ui/core/CssBaseline';
 import PropTypes from 'prop-types';
 import { defaultTheme } from '../relative/path/to/theme';
@@ -96,8 +97,8 @@ export default AppWrapper;
 ```
 
 #### Create a theme file.
-.._pathath/to/theme.js_
 ```javascript
+// path/to/theme.js
 const m = (factor = 1) => {
   const margin = 0.5 * factor;
   return `${margin}rem`;
@@ -149,8 +150,8 @@ export default defaultTheme;
 ```
 
 #### Provide breakpoints & media-query functions
-.._path/to/media-queries.js
 ```javascript
+// path/to/media-queries.js
 // This could just as easily be included in the theme file.
 
 import styled from 'styled-components';
@@ -197,8 +198,8 @@ export const RenderIfDesktop = styled.div`
 `;
 ```
 #### Provide global styles.
-.._path/to/global-style.jsx_
 ```javascript
+// path/to/global-style.jsx
 // This file can reference the theme
 
 import { createGlobalStyle } from 'styled-components';
@@ -254,8 +255,8 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle;
 ```
 #### EXAMPLE 1A --- Create reusable styled components based on theme.
-.._path/to/styled-dialog-parts_
 ```javascript
+// path/to/styled-dialog-parts
 import styled from 'styled-components';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -321,8 +322,8 @@ export {
 };
 ```
 #### EXAMPLE 1B --- A component using styled-component exports
-.._path/to/form-dialog.jsx_
 ```javascript
+// path/to/form-dialog.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
