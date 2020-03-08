@@ -47,7 +47,7 @@ AppWrapper.propTypes = {
 export default AppWrapper;```
 
 ```
-GlobalStyle and defaultTheme are defined in other files. For example:
+&nbspGlobalStyle and defaultTheme are defined in other files. For example:
 
 ```
 // global-style.jsx
@@ -56,7 +56,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`...`;
 export default GlobalStyle;
 ```
-and
+&nbspand
 ```
 // theme.js
 
