@@ -5,7 +5,7 @@ This repo provides a combination of functional boilerplate and nonfunctional exa
 * README - PART II: Concatenated contents of the other files in this repo, laid out in logical order.
 * THE OTHER FILES: A combination of boilerplate and code that illustrates how to set up and integrate styled components into a Material UI React project.
 Supporting documentation can be found on the Material UI website <a href="https://material-ui.com/guides/interoperability/#styled-components">here</a>, <a href="https://material-ui.com/guides/interoperability/#controlling-priority-%EF%B8%8F-3">here</a> and <a href="https://material-ui.com/styles/advanced/#injectfirst">here</a>.<code>
-### PLEASE NOTE:
+## PLEASE NOTE:
 * The repo does not and is not intended to build.  Some of the code can be integrated in other apps (app-wrapper.jsx), but as a whole, its main purpose is to provide a few helpful snippets and guide new developers in setting up Material UI projects that can leverage important features of Styled Components, such as theming, preferential CSS injection, and global styles.
 * This by no means covers all of the different features and functionality available from the Styled Components library.
 * Files are ordered for quickest reading.
@@ -13,7 +13,8 @@ Supporting documentation can be found on the Material UI website <a href="https:
 * The concatenation in this readme differs from the files in that there is no app.jsx, app-wrapper.jsx, or index.js files.  There are
   also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)
 ___
-###  PART I - Key styled-components code integrations.
+##  PART I
+### Key styled-components code integrations.
 ```javascript
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -62,7 +63,9 @@ and
 const defaultTheme = { ... };
 export default defaultTheme;
 ```
-### PART II - File concat illustrating project setup & organization.
+___
+## PART II
+### File concat illustrating project setup & organization.
 ..Set up application to provide theme, global styles, and style overrides.
 ```javascript
 // path/to/app-wrapper.jsx
