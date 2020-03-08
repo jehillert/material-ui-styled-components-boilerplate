@@ -254,7 +254,10 @@ const GlobalStyle = createGlobalStyle`
 
 export default GlobalStyle;
 ```
-### XAMPLE 1A --- Create reusable styled components based on them
+---
+## EXAMPLES
+---
+### Create reusable styled components based on them
 ```javascript
 // path/to/styled-dialog-parts
 import styled from 'styled-components';
