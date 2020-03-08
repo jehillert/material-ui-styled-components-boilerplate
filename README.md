@@ -1,4 +1,4 @@
-# <div align="center">Boilerplate & Example Code for<p><p>MATERIAL UI + STYLED COMPONENTS</div>
+# <div align="center">Boilerplate & Example Code<p><p>MATERIAL UI + STYLED COMPONENTS</div>
 
 ## ABOUT THIS REPO:
 This repo provides a combination of functional boilerplate and nonfunctional example stubs that may be useful for developers who want the ability to customize Material UI components with the Styled Components library. Contents are arranged as follows:
