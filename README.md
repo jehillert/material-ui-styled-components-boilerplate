@@ -5,15 +5,14 @@ This repo provides a combination of functional boilerplate and nonfunctional exa
 * README - PART I: Abbreviated code for globally overriding material UI default styles in favor of styled components, and other use full styled-components integrations.
 * README - PART II: Concatenated contents of the other files in this repo, laid out in logical order.
 * THE OTHER FILES: A combination of boilerplate and code that illustrates how to set up and integrate styled components into a Material UI React project.
-Supporting documentation can be found on the Material UI website <a href="https://material-ui.com/guides/interoperability/#styled-components">here</a>, <a href="https://material-ui.com/guides/interoperability/#controlling-priority-%EF%B8%8F-3">here</a> and <a href="https://material-ui.com/styles/advanced/#injectfirst">here</a>.<code>
-</div>
+Supporting documentation can be found on the Material UI website <a href="https://material-ui.com/guides/interoperability/#styled-components">here</a>, <a href="https://material-ui.com/guides/interoperability/#controlling-priority-%EF%B8%8F-3">here</a> and <a href="https://material-ui.com/styles/advanced/#injectfirst">here</a>.<code></div>
 ## PLEASE NOTE:
 * The repo does not and is not intended to build.  Some of the code can be integrated in other apps (app-wrapper.jsx), but as a whole, its main purpose is to provide a few helpful snippets and guide new developers in setting up Material UI projects that can leverage important features of Styled Components, such as theming, preferential CSS injection, and global styles.
 * This by no means covers all of the different features and functionality available from the Styled Components library.
 * Files are ordered for quickest reading.
 * The author had about 18 months coding experience at the time of writing, so the information below may not reflect best practices.
 * The concatenation in this readme differs from the files in that there is no app.jsx, app-wrapper.jsx, or index.js files.  There are
-  also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)<p>
+  also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)
 ###  PART I - Key styled-components code integrations.
 ```
 import React from 'react';
