@@ -44,7 +44,6 @@ AppWrapper.propTypes = {
 
 export default AppWrapper;```
 
-------------------------------------
 ```
 GlobalStyle and defaultTheme are defined in other files. For example:
 
@@ -64,6 +63,7 @@ export default defaultTheme;
 
 ### PART II - File concat illustrating project setup & organization.
 #### Set up application to provide theme, global styles, and style overrides.
+...
 // path/to/AppWrapper.jsx
 import CssBaseline from '@material-ui/core/CssBaseline';
 import PropTypes from 'prop-types';
