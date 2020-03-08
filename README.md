@@ -324,7 +324,7 @@ export {
   StyledMuiDialogActions,
 };
 ```
-### EXAMPLE 1B: A component using styled-component export
+### A component using styled-component export
 ```javascript
 // path/to/form-dialog.jsx
 import React from 'react';
@@ -404,7 +404,7 @@ FormDialog.defaultProps = {...};
 FormDialog.propTypes = {...};
 export default FormDialog;
 ```
-### EXAMPLE 2A: Using media query functions for responsive desig
+### Using media query functions for responsive desig
 ```javascript
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -468,7 +468,7 @@ S.ResponsiveLeftSidePanel.propTypes = {
 
 export default ResponsiveLeftSidePanel;
 ```
-### EXAMPLE 2B: Use media query functions outside of styled component
+### Use media query functions outside of styled component
 ```javascript
 import React from 'react';
 import PropTypes from 'prop-types';
