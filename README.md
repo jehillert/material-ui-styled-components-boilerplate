@@ -93,7 +93,7 @@ AppWrapper.propTypes = {
 export default AppWrapper;
 ```
 
-####Create a theme file.
+#### Create a theme file.
 ```
 // path/to/theme.js
 const m = (factor = 1) => {
@@ -145,7 +145,7 @@ const defaultTheme = {
 
 export default defaultTheme;
 
-####Provide breakpoints & media-query functions
+#### Provide breakpoints & media-query functions
 ```
 // path/to/media-queries.js
 // This could just as easily be included in the theme.
@@ -192,7 +192,7 @@ export const RenderIfDesktop = styled.div`
   }
 `;
 ```
-####Provide global styles.
+#### Provide global styles.
 ```
 // path/to/global-style.jsx
 // This file can reference the theme
@@ -248,7 +248,7 @@ const GlobalStyle = createGlobalStyle`
 
 export default GlobalStyle;
 ```
-####EXAMPLE 1A --- Create reusable styled components based on theme.
+#### EXAMPLE 1A --- Create reusable styled components based on theme.
 ```
 // path/to/styled-dialog-parts
 import styled from 'styled-components';
@@ -315,7 +315,7 @@ export {
   StyledMuiDialogActions,
 };
 ```
-####EXAMPLE 1B --- A component using styled-component exports
+#### EXAMPLE 1B --- A component using styled-component exports
 ```
 // path/to/form-dialog.jsx
 import React from 'react';
@@ -395,7 +395,7 @@ FormDialog.defaultProps = {...};
 FormDialog.propTypes = {...};
 export default FormDialog;
 ```
-####EXAMPLE 2A --- Using media query functions for responsive design
+#### EXAMPLE 2A --- Using media query functions for responsive design
 ```
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -459,7 +459,7 @@ S.ResponsiveLeftSidePanel.propTypes = {
 
 export default ResponsiveLeftSidePanel;
 ```
-####EXAMPLE 2B --- Use media query functions outside of styled components
+#### EXAMPLE 2B --- Use media query functions outside of styled components
 ```
 import React from 'react';
 import PropTypes from 'prop-types';
