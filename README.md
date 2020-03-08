@@ -256,7 +256,6 @@ export default GlobalStyle;
 ```
 ---
 ## EXAMPLES
----
 ### Create reusable styled components based on them
 ```javascript
 // path/to/styled-dialog-parts
