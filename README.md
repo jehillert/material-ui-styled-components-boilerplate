@@ -47,7 +47,7 @@ AppWrapper.propTypes = {
 export default AppWrapper;```
 
 ```
-&nbsp GlobalStyle and defaultTheme are defined in other files. For example:
+..GlobalStyle and defaultTheme are defined in other files. For example:
 
 ```
 // global-style.jsx
@@ -56,7 +56,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`...`;
 export default GlobalStyle;
 ```
-&nbsp and
+..and
 ```
 // theme.js
 
@@ -64,8 +64,8 @@ const defaultTheme = { ... };
 export default defaultTheme;
 ```
 ### PART II - File concat illustrating project setup & organization.
-#### Set up application to provide theme, global styles, and style overrides.
-##### path/to/app-wrapper.jsx
+..Set up application to provide theme, global styles, and style overrides.
+.._path/to/app-wrapper.jsx_
 ```
 import CssBaseline from '@material-ui/core/CssBaseline';
 import PropTypes from 'prop-types';
@@ -98,7 +98,7 @@ export default AppWrapper;
 ```
 
 #### Create a theme file.
-##### path/to/theme.js
+.._pathath/to/theme.js_
 ```
 
 const m = (factor = 1) => {
@@ -152,7 +152,7 @@ export default defaultTheme;
 ```
 
 #### Provide breakpoints & media-query functions
-##### path/to/media-queries.js
+.._path/to/media-queries.js
 ```
 // This could just as easily be included in the theme file.
 
@@ -200,7 +200,7 @@ export const RenderIfDesktop = styled.div`
 `;
 ```
 #### Provide global styles.
-##### path/to/global-style.jsx
+.._path/to/global-style.jsx_
 ```
 // This file can reference the theme
 
@@ -257,7 +257,7 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle;
 ```
 #### EXAMPLE 1A --- Create reusable styled components based on theme.
-##### path/to/styled-dialog-parts
+.._path/to/styled-dialog-parts_
 ```
 import styled from 'styled-components';
 import Dialog from '@material-ui/core/Dialog';
@@ -324,7 +324,7 @@ export {
 };
 ```
 #### EXAMPLE 1B --- A component using styled-component exports
-##### path/to/form-dialog.jsx
+.._path/to/form-dialog.jsx_
 ```
 import React from 'react';
 import PropTypes from 'prop-types';
