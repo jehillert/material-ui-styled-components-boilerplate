@@ -1,5 +1,4 @@
-# MATERIAL UI + STYLED COMPONENTS
-# Boilerplate & Example Code
+# MATERIAL UI + STYLED COMPONENTS<p>Boilerplate & Example Code
 ## ABOUT THIS REPO:
 This repo provides a combination of functional boilerplate and nonfunctional example stubs that may be useful for developers who want the ability to customize Material UI components with the Styled Components library. Contents are arranged as follows:
 * README - PART I: Abbreviated code for globally overriding material UI default styles in favor of styled components, and other use full styled-components integrations.
@@ -12,7 +11,7 @@ Supporting documentation can be found on the Material UI website <a href="https:
 * Files are ordered for quickest reading.
 * The author had about 18 months coding experience at the time of writing, so the information below may not reflect best practices.
 * The concatenation in this readme differs from the files in that there is no app.jsx, app-wrapper.jsx, or index.js files.  There are
-  also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)</p>
+  also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)<p>
 
 ###  PART I - Key styled-components code integrations.
 ```
