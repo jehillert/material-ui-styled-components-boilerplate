@@ -13,7 +13,7 @@ Supporting documentation can be found on the Material UI website <a href="https:
 * The concatenation in this readme differs from the files in that there is no app.jsx, app-wrapper.jsx, or index.js files.  There are
   also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)
 ___
-##  PART I: Key styled-components code integrations.
+###  PART I: Key styled-components code integrations.
 ```javascript
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -63,7 +63,7 @@ const defaultTheme = { ... };
 export default defaultTheme;
 ```
 ___
-## PART II: Everything on one page...
+### PART II: Everything on one page...
 ..Set up application to provide theme, global styles, and style overrides.
 ```javascript
 // path/to/app-wrapper.jsx
@@ -97,7 +97,7 @@ AppWrapper.propTypes = {
 export default AppWrapper;
 ```
 
-#### Create a theme file.
+### Create a theme file.
 ```javascript
 // path/to/theme.js
 const m = (factor = 1) => {
@@ -150,7 +150,7 @@ const defaultTheme = {
 export default defaultTheme;
 ```
 
-#### Provide breakpoints & media-query functions
+### Provide breakpoints & media-query functions
 ```javascript
 // path/to/media-queries.js
 // This could just as easily be included in the theme file.
@@ -198,7 +198,7 @@ export const RenderIfDesktop = styled.div`
   }
 `;
 ```
-#### Provide global styles.
+### Provide global styles.
 ```javascript
 // path/to/global-style.jsx
 // This file can reference the theme
@@ -255,7 +255,7 @@ const GlobalStyle = createGlobalStyle`
 
 export default GlobalStyle;
 ```
-#### EXAMPLE 1A --- Create reusable styled components based on theme.
+### EXAMPLE 1A --- Create reusable styled components based on theme.
 ```javascript
 // path/to/styled-dialog-parts
 import styled from 'styled-components';
@@ -322,7 +322,7 @@ export {
   StyledMuiDialogActions,
 };
 ```
-#### EXAMPLE 1B --- A component using styled-component exports
+### EXAMPLE 1B --- A component using styled-component exports
 ```javascript
 // path/to/form-dialog.jsx
 import React from 'react';
@@ -402,7 +402,7 @@ FormDialog.defaultProps = {...};
 FormDialog.propTypes = {...};
 export default FormDialog;
 ```
-#### EXAMPLE 2A --- Using media query functions for responsive design
+### EXAMPLE 2A --- Using media query functions for responsive design
 ```javascript
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -466,7 +466,7 @@ S.ResponsiveLeftSidePanel.propTypes = {
 
 export default ResponsiveLeftSidePanel;
 ```
-#### EXAMPLE 2B --- Use media query functions outside of styled components
+### EXAMPLE 2B --- Use media query functions outside of styled components
 ```javascript
 import React from 'react';
 import PropTypes from 'prop-types';
