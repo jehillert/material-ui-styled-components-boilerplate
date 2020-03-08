@@ -61,8 +61,8 @@ export default defaultTheme;
 ```
 ### PART II - File concat illustrating project setup & organization.
 #### Set up application to provide theme, global styles, and style overrides.
-...
-// path/to/AppWrapper.jsx
+```
+// path/to/app-wrapper.jsx
 import CssBaseline from '@material-ui/core/CssBaseline';
 import PropTypes from 'prop-types';
 import { defaultTheme } from '../relative/path/to/theme';
