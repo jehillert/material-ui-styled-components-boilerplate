@@ -64,7 +64,7 @@ export default defaultTheme;
 ```
 ___
 ### PART II: Everything on one page...
-..Set up application to provide theme, global styles, and style overrides.
+    Set up application to provide theme, global styles, and style overrides.
 ```javascript
 // path/to/app-wrapper.jsx
 import CssBaseline from '@material-ui/core/CssBaseline';
