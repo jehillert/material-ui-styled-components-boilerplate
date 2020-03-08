@@ -58,9 +58,7 @@ and
 // theme.js
 const defaultTheme = { ... };
 export default defaultTheme;
-...
-
-
+```
 ### PART II - File concat illustrating project setup & organization.
 #### Set up application to provide theme, global styles, and style overrides.
 ...
