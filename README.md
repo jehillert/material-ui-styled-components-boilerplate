@@ -1,12 +1,11 @@
-# ABOUT THIS REPO
-## Boilerplate & Example Code for MATERIAL UI + STYLED COMPONENTS
+# Boilerplate & Example Code for MATERIAL UI + STYLED COMPONENTS
+## ABOUT THIS REPO:
 This repo provides a combination of functional boilerplate and nonfunctional example stubs that may be useful for developers who want the ability to customize Material UI components with the Styled Components library. Contents are arranged as follows:
 * README - PART I: Abbreviated code for globally overriding material UI default styles in favor of styled components, and other use full styled-components integrations.
 * README - PART II: Concatenated contents of the other files in this repo, laid out in logical order.
 * THE OTHER FILES: A combination of boilerplate and code that illustrates how to set up and integrate styled components into a Material UI React project.
 Supporting documentation can be found on the Material UI website <a href="https://material-ui.com/guides/interoperability/#styled-components">here</a>, <a href="https://material-ui.com/guides/interoperability/#controlling-priority-%EF%B8%8F-3">here</a> and <a href="https://material-ui.com/styles/advanced/#injectfirst">here</a>.<code>
-
-PLEASE NOTE:
+## PLEASE NOTE:
 * This by no means covers all of the different features and functionality available from the Styled Components library.
 * The author had about 18 months coding experience at the time of writing, so the information below may not reflect best practices.
 * The concatenation in this readme differs from the files in that there is no app.jsx, app-wrapper.jsx, or index.js files.  There are
