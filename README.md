@@ -13,8 +13,7 @@ Supporting documentation can be found on the Material UI website <a href="https:
 * The concatenation in this readme differs from the files in that there is no app.jsx, app-wrapper.jsx, or index.js files.  There are
   also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)
 ___
-##  PART I
-### Key styled-components code integrations.
+##  PART I: Key styled-components code integrations.
 ```javascript
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -64,8 +63,7 @@ const defaultTheme = { ... };
 export default defaultTheme;
 ```
 ___
-## PART II
-### File concat illustrating project setup & organization.
+## PART II: Everything on one page...
 ..Set up application to provide theme, global styles, and style overrides.
 ```javascript
 // path/to/app-wrapper.jsx
