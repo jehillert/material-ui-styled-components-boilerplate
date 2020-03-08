@@ -49,6 +49,7 @@ GlobalStyle and defaultTheme are defined in other files. For example:
 
 ```
 // global-style.jsx
+
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`...`;
 export default GlobalStyle;
@@ -56,13 +57,14 @@ export default GlobalStyle;
 and
 ```
 // theme.js
+
 const defaultTheme = { ... };
 export default defaultTheme;
 ```
 ### PART II - File concat illustrating project setup & organization.
 #### Set up application to provide theme, global styles, and style overrides.
+##### path/to/app-wrapper.jsx
 ```
-// path/to/app-wrapper.jsx
 import CssBaseline from '@material-ui/core/CssBaseline';
 import PropTypes from 'prop-types';
 import { defaultTheme } from '../relative/path/to/theme';
@@ -94,8 +96,9 @@ export default AppWrapper;
 ```
 
 #### Create a theme file.
+##### path/to/theme.js
 ```
-// path/to/theme.js
+
 const m = (factor = 1) => {
   const margin = 0.5 * factor;
   return `${margin}rem`;
@@ -147,9 +150,10 @@ export default defaultTheme;
 ```
 
 #### Provide breakpoints & media-query functions
+##### path/to/media-queries.js
 ```
-// path/to/media-queries.js
-// This could just as easily be included in the theme.
+// This could just as easily be included in the theme file.
+
 import styled from 'styled-components';
 
 export const size = {
@@ -194,9 +198,10 @@ export const RenderIfDesktop = styled.div`
 `;
 ```
 #### Provide global styles.
+##### path/to/global-style.jsx
 ```
-// path/to/global-style.jsx
 // This file can reference the theme
+
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   tagname {
@@ -250,8 +255,8 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle;
 ```
 #### EXAMPLE 1A --- Create reusable styled components based on theme.
+##### path/to/styled-dialog-parts
 ```
-// path/to/styled-dialog-parts
 import styled from 'styled-components';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -317,8 +322,8 @@ export {
 };
 ```
 #### EXAMPLE 1B --- A component using styled-component exports
+##### path/to/form-dialog.jsx
 ```
-// path/to/form-dialog.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
