@@ -12,9 +12,8 @@ Supporting documentation can be found on the Material UI website <a href="https:
 * The author had about 18 months coding experience at the time of writing, so the information below may not reflect best practices.
 * The concatenation in this readme differs from the files in that there is no app.jsx, app-wrapper.jsx, or index.js files.  There are
   also some differences in the file paths of imports (i.e., the files illustrate aliasing whereas here they illustrate relative paths.)
-</p>
 ###  PART I - Key styled-components code integrations.
-```
+```javascript
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import PropTypes from 'prop-types';
@@ -43,9 +42,9 @@ AppWrapper.propTypes = {
   children: PropTypes.node,
 };
 
-export default AppWrapper;```
-
+export default AppWrapper;
 ```
+
 ..GlobalStyle and defaultTheme are defined in other files. For example:
 
 ```
