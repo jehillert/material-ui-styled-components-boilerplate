@@ -144,6 +144,7 @@ const defaultTheme = {
 };
 
 export default defaultTheme;
+```
 
 #### Provide breakpoints & media-query functions
 ```
