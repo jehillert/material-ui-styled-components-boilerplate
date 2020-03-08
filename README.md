@@ -1,7 +1,6 @@
 # <div align="center">Boilerplate & Example Code<p><p>MATERIAL UI + STYLED COMPONENTS</div>
 ## ABOUT THIS REPO:
 This repo provides a combination of functional boilerplate and nonfunctional example stubs that may be useful for developers who want the ability to customize Material UI components with the Styled Components library. Contents are arranged as follows:
-<ol style="padding:none; margin:none">
 * README - PART I: Abbreviated code for globally overriding material UI default styles in favor of styled components, and other use full styled-components integrations.
 * README - PART II: Concatenated contents of the other files in this repo, laid out in logical order.
 * THE OTHER FILES: A combination of boilerplate and code that illustrates how to set up and integrate styled components into a Material UI React project.
