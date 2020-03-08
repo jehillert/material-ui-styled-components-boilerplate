@@ -47,7 +47,7 @@ export default AppWrapper;
 
 ..GlobalStyle and defaultTheme are defined in other files. For example:
 
-```
+```javascript
 // global-style.jsx
 
 import { createGlobalStyle } from 'styled-components';
@@ -55,7 +55,7 @@ const GlobalStyle = createGlobalStyle`...`;
 export default GlobalStyle;
 ```
 ..and
-```
+```javascript
 // theme.js
 
 const defaultTheme = { ... };
@@ -64,7 +64,7 @@ export default defaultTheme;
 ### PART II - File concat illustrating project setup & organization.
 ..Set up application to provide theme, global styles, and style overrides.
 .._path/to/app-wrapper.jsx_
-```
+```javascript
 import CssBaseline from '@material-ui/core/CssBaseline';
 import PropTypes from 'prop-types';
 import { defaultTheme } from '../relative/path/to/theme';
@@ -97,8 +97,7 @@ export default AppWrapper;
 
 #### Create a theme file.
 .._pathath/to/theme.js_
-```
-
+```javascript
 const m = (factor = 1) => {
   const margin = 0.5 * factor;
   return `${margin}rem`;
@@ -151,7 +150,7 @@ export default defaultTheme;
 
 #### Provide breakpoints & media-query functions
 .._path/to/media-queries.js
-```
+```javascript
 // This could just as easily be included in the theme file.
 
 import styled from 'styled-components';
@@ -199,7 +198,7 @@ export const RenderIfDesktop = styled.div`
 ```
 #### Provide global styles.
 .._path/to/global-style.jsx_
-```
+```javascript
 // This file can reference the theme
 
 import { createGlobalStyle } from 'styled-components';
@@ -256,7 +255,7 @@ export default GlobalStyle;
 ```
 #### EXAMPLE 1A --- Create reusable styled components based on theme.
 .._path/to/styled-dialog-parts_
-```
+```javascript
 import styled from 'styled-components';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -323,7 +322,7 @@ export {
 ```
 #### EXAMPLE 1B --- A component using styled-component exports
 .._path/to/form-dialog.jsx_
-```
+```javascript
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -402,7 +401,7 @@ FormDialog.propTypes = {...};
 export default FormDialog;
 ```
 #### EXAMPLE 2A --- Using media query functions for responsive design
-```
+```javascript
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -466,7 +465,7 @@ S.ResponsiveLeftSidePanel.propTypes = {
 export default ResponsiveLeftSidePanel;
 ```
 #### EXAMPLE 2B --- Use media query functions outside of styled components
-```
+```javascript
 import React from 'react';
 import PropTypes from 'prop-types';
 import blueGrey from '@material-ui/core/colors/blueGrey';
